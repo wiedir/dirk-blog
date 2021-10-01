@@ -11,9 +11,10 @@ from flask_gravatar import Gravatar
 from functools import wraps
 from sqlalchemy import ForeignKey
 import os
+from dotenv import load_dotenv
 
-# from dotenv import load_dotenv
-# load_dotenv()
+# Enable line below for local server operation
+#load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
