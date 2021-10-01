@@ -11,9 +11,9 @@ from flask_gravatar import Gravatar
 from functools import wraps
 from sqlalchemy import ForeignKey
 import os
-from dotenv import load_dotenv
 
-# Enable line below for local server operation
+## Enable line below for local server operation
+#from dotenv import load_dotenv
 #load_dotenv()
 
 app = Flask(__name__)
